@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+	"name": ".NET with MSSQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+
+	// Specify environment variables in the container
+	"remoteEnv": {
+		"FOO": "bar"
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { },
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-dotnettools.csharp",
+		"ms-mssql.mssql"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use non-root user. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "coder"
+}
